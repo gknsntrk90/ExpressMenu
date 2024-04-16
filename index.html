@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Menu</title>
+    <!--!BOOTSTRAP CSS-->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+
+    <!--!CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--!FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+                                    <!--! HEADER SECTİON START-->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="logo">
+        </a>
+        <nav class="navbar">
+            <!--active classı sayesinde hangi sayfadaysak o sayfanın adının altında kırmızı işaret olacak-->
+            <!--active'i tabi ki css ekledik -->
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#products">Products</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Contact</a>
+            <a href="#blogs">Blogs</a>
+        </nav>
+
+        <div class="buttons">
+            <button id="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button id="cart-btn">
+            <button>
+                <i class="fa-solid fa-shopping-cart"></i>
+            </button>
+            <button id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+
+
+
+        <div class="search-form">
+            <input type="text" class="search-input" id="seatch-box" placeholder="search here">
+            <i class="fas fa-search"></i>
+        </div>
+
+
+
+
+        <div class="card-items-container">
+            <div class="card-item">
+                <i class="fas fa-times"></i>
+                <img src="images/menu-1.png" alt="">
+                <div class="content">
+                    <h3>card item 01</h3>
+                    <div class="price">$15.99/-</div>
+                </div>
+            </div>
+
+            <div class="card-item">
+                <i class="fas fa-times"></i>
+                <img src="images/menu-2.png" alt="">
+                <div class="content">
+                    <h3>card item 02</h3>
+                    <div class="price">$15.99/-</div>
+                </div>
+            </div>
+
+            <div class="card-item">
+                <i class="fas fa-times"></i>
+                <img src="images/menu-3.png" alt="">
+                <div class="content">
+                    <h3>card item 03</h3>
+                    <div class="price">$15.99/-</div>
+                </div>
+            </div>
+
+            <div class="card-item">
+                <i class="fas fa-times"></i>
+                <img src="images/menu-4.png" alt="">
+                <div class="content">
+                    <h3>card item 04</h3>
+                    <div class="price">$15.99/-</div>
+                </div>
+            </div>
+            <a href="#" class="btn">checkout now</a>
+        </div>
+    </header>
+
+                                        <!--! HEADER SECTİON END-->
+
+
+
+
+
+
+
+
+
+
+
+                                        <!--! HOME SECTİON START-->
+<section class="home" id="home">
+   <div class="content">
+    <h3>EXPRESS HOME DELIVERY</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Laboriosam quos repellendus aliquan quam aperiam quas?
+    </p>
+    <a href="#" class="btn">Order Now</a>
+   </div>
+</section>
+                                        <!--! HOME SECTİON END-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <!--! MENU SECTİON START-->
+<section class="menu" id="menu">
+    <h1 class="heading">Our <span>Menu</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="box-head">
+                <img src="images/menu-1.png" alt="menu">
+                <span class="menu-category">PIZZA</span>
+                <h3>6 Mini Pizzas</h3>
+                <div class="price">$104.99 <span>119.99</span></div>
+            </div>
+            <div class="box-bottom">
+                <a href="#" class="btn">Add to Card</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-head">
+                <img src="images/menu-2.png" alt="menu">
+                <span class="menu-category">Burger</span>
+                <h3>5 Mini Burgers</h3>
+                <div class="price">$99.99 <span>109.99</span></div>
+            </div>
+            <div class="box-bottom">
+                <a href="#" class="btn">Add to Card</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-head">
+                <img src="images/menu-3.png" alt="menu">
+                <span class="menu-category">PIZZA</span>
+                <h3>2 Mixed Pizzas</h3>
+                <div class="price">$49.99 <span>59.99</span></div>
+            </div>
+            <div class="box-bottom">
+                <a href="#" class="btn">Add to Card</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-head">
+                <img src="images/menu-4.png" alt="menu">
+                <span class="menu-category">Burger</span>
+                <h3>3 Burgers</h3>
+                <div class="price">$79.99 <span>99.99</span></div>
+            </div>
+            <div class="box-bottom">
+                <a href="#" class="btn">Add to Card</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--! MENU SECTİON END-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <!--! PRODUCTS SECTION START-->
+<section class="products" id="products">
+    <h1 class="heading">Our <span>PRODUCTS</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="box-head">
+                <span class="title">MINI BURGER</span>
+                <a href="#" class="name">Bacon Burger</a>
+            </div>
+                <div class="image">
+                    <img src="images/product-1.png" alt="">
+                </div>
+                <div class="box-bottom">
+                    <div class="info">
+                        <b class="price">$6.00</b>
+                        <span class="amount">110gr / 300 Cal</span>
+                    </div>
+                    <div class="product-btn">
+                        <a href="#">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-head">
+                    <span class="title">MINI BURGER</span>
+                    <a href="#" class="name">Bacon Burger</a>
+                </div>
+                    <div class="image">
+                        <img src="images/product-2.png" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="price">$6.00</b>
+                            <span class="amount">110gr / 300 Cal</span>
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">
+                                <i class="fas fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="box dark-bg">
+                    <div class="box-head">
+                        <span class="title">MINI BURGER</span>
+                        <a href="#" class="name">Bacon Burger</a>
+                    </div>
+                        <div class="image">
+                            <img src="images/dark-product.jpg" alt="">
+                        </div>
+                        <div class="box-bottom">
+                            <div class="info">
+                                <b class="price">$6.00</b>
+                                <span class="amount">110gr / 300 Cal</span>
+                            </div>
+                            <div class="product-btn">
+                                <a href="#">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    </div>
+</section>
+<!--! PRODUCTS SECTION END-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <!--!ABOUT START-->
+<section class="about" id="about">
+    <h1 class="heading">about <span>us</span></h1>
+    <div class="row">
+        <div class="image">
+            <img src="images/about.jpg" alt="about">
+        </div>
+        <div class="content">
+            <h3>What is the secret recipe of our burgers?</h3>
+            <p>lorem Ipsum, dolor sit amet consectetur adipisicing elit. quisquam valuptatem facere amet
+                temporibus culpa sit illo earum cupidiate soluta perferendis!
+            </p>
+            <p>lorem Ipsum, dolor sit amet consectetur adipisicing elit. quisquam valuptatem facere amet
+                temporibus culpa sit illo earum cupidiate soluta perferendis!
+            </p>
+            <p>lorem Ipsum, dolor sit amet consectetur adipisicing elit. quisquam valuptatem facere amet
+                temporibus culpa sit illo earum cupidiate soluta perferendis!
+            </p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </div>
+</section>
+<!--!ABOUT END-->
+
+
+
+
+
+
+                                            <!--! REVIEW START-->
+<section class="review" id="review">
+    <h1 class="heading">custumers <span>review</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="images/quote.png" alt="">
+            <p>
+                Lorem ipsm dolor sit amet consectetur adipisicing elit. autem nulla repenllendus similique
+                porrpo explicaba, blanditis vaolutatibus obcaeace harum es, oss qua modi alias.
+                possimus odio quam ex aurem deciumsu! offica.
+            </p>
+            <img src="images/avatar-1.png" class="user" alt="">
+            <h3>Christina Gallagher</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/quote.png" alt="">
+            <p>
+                Lorem ipsm dolor sit amet consectetur adipisicing elit. autem nulla repenllendus similique
+                porrpo explicaba, blanditis vaolutatibus obcaeace harum es, oss qua modi alias.
+                possimus odio quam ex aurem deciumsu! offica.
+            </p>
+            <img src="images/avatar-2.png" class="user" alt="">
+            <h3>Dusan Tadic</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/quote.png" alt="">
+            <p>
+                Lorem ipsm dolor sit amet consectetur adipisicing elit. autem nulla repenllendus similique
+                porrpo explicaba, blanditis vaolutatibus obcaeace harum es, oss qua modi alias.
+                possimus odio quam ex aurem deciumsu! offica.
+            </p>
+            <img src="images/avatar-3.png" class="user" alt="">
+            <h3>Lisa Arambula</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+    </div>
+</section>
+<!--! REVİEW END-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <!--! CONTACT START-->
+<section class="contact" id="contact">
+    <h1 class="heading">contact <span>us</span></h1>
+    <div class="row">
+        <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1C7BfkTS8GLhoZ-Zo6cnSOgRmCBA&ehbc=2E312F"></iframe>
+        <form>
+            <h3>get in touch</h3>
+            <div class="inputBox">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="name">
+            </div>
+
+            <div class="inputBox">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="E-mail">
+            </div>
+
+            <div class="inputBox">
+                <i class="fas fa-phone"></i>
+                <input type="number" placeholder="Phone">
+            </div>
+            <input type="submit" class="btn" value="contact now">
+        </form>
+    </div>
+</section>
+<!--! CONTACT END-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <!--!BLOCK START-->
+<section class="blogs" id="blogs">
+    <h1 class="heading">our <span>blog</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="images/blog-1.jpg" alt="">
+            </div>
+                    <div class="content">
+                        <a href="#" class="title">how to make burger?</a>
+                        <span>by admin / 10st may, 2024</span>
+                        <p>lorem ipsum dolor sit amet consectetur, adipisicng elit.
+                            temporibus,laudrtidam!
+                        </p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+            
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/blog-2.jpg" alt="">
+            </div>
+                    <div class="content">
+                        <a href="#" class="title">how to make burger?</a>
+                        <span>by admin / 10st may, 2024</span>
+                        <p>lorem ipsum dolor sit amet consectetur, adipisicng elit.
+                            temporibus,laudrtidam!
+                        </p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+            
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/blog-3.jpg" alt="">
+            </div>
+                    <div class="content">
+                        <a href="#" class="title">how to make burger?</a>
+                        <span>by admin / 10st may, 2024</span>
+                        <p>lorem ipsum dolor sit amet consectetur, adipisicng elit.
+                            temporibus,laudrtidam!
+                        </p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+            
+        
+    </div>
+</section>
+<!--!BLOCK END-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <!--!FOOTER START-->
+<section class="footer" id="footer">
+    <div class="search">
+        <input type="text" class="search-input" placeholder="Search">
+        <button class="btn btn-primary">search</button>
+    </div>
+    <div class="share">
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="links">
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Menu</a>
+        <a href="#">Products</a>
+        <a href="#">Review</a>
+        <a href="#">Contact</a>
+        <a href="#">Blogs</a>
+    </div>
+
+    <div class="credit">
+        created by <span>Gökhan Şentürk</span>  | all right reservered
+    </div>
+</section>
+<!--!FOOTER END-->
+    <!--!JAVASCRİPT-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
